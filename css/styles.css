@@ -1,63 +1,227 @@
-/* 
+
+     * {
+        font-family:Arial, Helvetica, sans-serif;
+     }
+     
+     
+     .top-section {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F6F8FA;
+        height: 86px;
+        max-width: 1024px;   
+        font-size: 14px; 
+     }
+
     .top-nav {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        color: black;
-        border-bottom: solid 1px lightgray;
-        background-color: #b3b7bd;
-        } */
+        justify-content: space-around;
+        justify-items: end;
+        width: 471px;
+        height: 57px;
+        }
 
-
-    .top-nav ul {
+    .menu {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        padding: 10px;
-        color: gray
-        }
+        justify-self: end;
+        color: #010a17;
+        list-style: none;
+        gap: 25px;
+        width: 311px;
+        height: 17px;
+       }
 
     .logo {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100px;
-        height: 100px;
+        flex-direction: row;
+        width: 155px;
+        height: 46px;
     }
 
-    .ul li {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        color: rgb(90, 86, 86);
-    }
-    .ul li a:hover {
-        text-decoration: none;
-        color: rgb(125, 2, 2);
-        font-weight: bold;
-    }
     .btn {
-        justify-content: center;
-        align-content: center;
-        background-color: rgb(26, 26, 186);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #2476FF;
         color: white;
-        cursor: grab;
-        height: 50px;
-        width: 100px;
-        border-radius: 50%;
-        padding: 10px;
+        height: 45px;
+        width: 102px;
+        border-radius: 30px;
+        border-color: #2476FF;
+        margin: 0 auto;
+        max-width: 1024px;
     }
 
     .trigram {
         display: none;
-        }
+    }
+    /* Header=DONE! ^^ */
 
-/* END HEADER */
-
-    .top-section {
+    .hero {
         display: flex;
-        flex-direction: column;
+        width: 1024px;
+        height: 446px;
+        background-image: url(../assets/bg/background-top.svg);
+        margin: 0 auto;
+        }
+ 
+    .headline h2 {
+        font-size: 40px;
+        color: #010a17;
+        width: 46%;
+        font-weight: 500;
+        
+    } 
+    
+    .subtext {
+        font-size: 12px;
+        color: #010a17;
+        width: 46%;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+       button{
+        display: flex;
         justify-content: center;
+        align-items: center;
+        background-color: #2476FF;
+        color: white;
+        height: 48px;
+        width: 137px;
+        border-radius: 30px;
+        border-color: #2476FF;
+        gap: 5px;
+    }
+
+    .fa-play {
+        display:flex;
         align-content: center;
+        color: #2476FF;
+        border-radius: 50%;
+    }
+
+    .fa {
+        display: flex;
+        background-color: white;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+    /* LEFT SIDE = DONE */
+    
+    .logo-icons {
+        position: relative;
+        width: 482px;
+        height: 406px;
+
+    }
+      
+    .asana {
+        position: absolute;
+        top: 10px;
+        left: 380px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;        
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+        background-image: url("../assets/logos/asana.png");
+        background-size: 50px;        
+        background-repeat: no-repeat;        
+        background-position: center;
+    }
+
+    .atlassian {
+        position: absolute;
+        top: 10px;
+        left: 175px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-image: url("../assets/logos/atlassian.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;               
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .calendar {
+        position: absolute;
+        top:310px;
+        left:364px; 
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-image: url(../assets/logos/calendar.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;                
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .google-ads {
+        position: absolute;
+        top:290px;
+        left:155px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-image: url(../assets/logos/google-ads.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;                
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .google {
+        position: absolute;
+        top: 10px;
+        left: 64px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-image: url(../assets/logos/google.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;                
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);  
+    }
+
+    .paypal {
+        position: absolute;
+        top: 172px;
+        left: 44px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-image: url(../assets/logos/paypal.jpg);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;                
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .weave {
+        position: absolute;
+        top: 172px;
+        left: 262px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-image: url(../assets/logos/weave.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;                
+        box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
     }
