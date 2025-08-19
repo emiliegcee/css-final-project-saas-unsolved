@@ -240,33 +240,37 @@
         justify-content: center;
         font-size: 12px;
         margin: 0 auto;
+        justify-items: space-between;
     }
 
-    .circle1{
+    .circle1 {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-        gap: 10px;
     }
+
      .outer-wing {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 1px;
         width: 83px;
-        background-color: #fbfbfb;
+        background-color: #f30606;
     }
     
     .circle2 {
         display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-        gap: 20px;
     }
 
     .inner-wing {
@@ -281,46 +285,73 @@
         
     .circle3 {
         display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-        gap: 10px;
     }
     
     .circle4 {
-        display: flex;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
         background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-        gap: 10px;
     } 
+
+    .small-circle {
+        background-color: #0066FF;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+    }
 
     .basic-elements {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
     }
 
     .components {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
     }
 
     .combined-components {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
     }
 
     .page-layouts {
-        display: flex;
-        justify-content: center;
+        display: flex;       
+        flex-wrap: wrap;
         align-items: center;
+        gap: 5px;
     }
 
     .bullet {
         text-align: center;
     }
+
+
+/* 
+    .pricing-section {
+        text-align: center;
+    }
+
+    .pricing {
+        font-size: 26px;
+    }
+
+    .pricing-subtext {
+        font-size: 16px;
+    } */
