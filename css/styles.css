@@ -225,3 +225,52 @@
         background-position: center;                
         box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
     }
+/* RIGHT SIDE= DONE */
+
+    .headline-why {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .bullets {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+
+    .circle1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #ECF2FF;
+        border-radius: 50%;
+        height:50px;
+        width: 50px;
+    }
+    
+    .circle2 {
+        display: flex;
+        background-color: #0a4cda;
+        border-radius: 50%;
+        height:50px;
+        width: 50px;
+    }    
+    
+    .circle3 {
+        display: flex;
+        background-color: #b40c90;
+        border-radius: 50%;
+        height:50px;
+        width: 50px;
+    }    
+    
+    .circle4 {
+        display: flex;
+        background-color: #9a4c09;
+        border-radius: 50%;
+        height:50px;
+        width: 50px;
+    } 
