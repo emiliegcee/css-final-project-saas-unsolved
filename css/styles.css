@@ -236,41 +236,91 @@
 
     .bullets {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        width: 964px;
+        justify-content: center;
         font-size: 12px;
+        margin: 0 auto;
     }
 
     .circle1{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
+        gap: 10px;
+    }
+     .outer-wing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1px;
+        width: 83px;
+        background-color: #fbfbfb;
     }
     
     .circle2 {
         display: flex;
-        background-color: #0a4cda;
+        background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-    }    
+        gap: 20px;
+    }
+
+    .inner-wing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1px;
+        width: 83px;
+        background-color: #00040c;
+    }
     
+        
     .circle3 {
         display: flex;
-        background-color: #b40c90;
+        background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
-    }    
+        gap: 10px;
+    }
     
     .circle4 {
         display: flex;
-        background-color: #9a4c09;
+        background-color: #ECF2FF;
         border-radius: 50%;
         height:50px;
         width: 50px;
+        gap: 10px;
     } 
+
+    .basic-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .components {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .combined-components {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-layouts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bullet {
+        text-align: center;
+    }
