@@ -107,6 +107,7 @@
     .fa-play {
         display:flex;
         align-content: center;
+        justify-content: center;
         color: #2476FF;
         border-radius: 50%;
     }
@@ -240,7 +241,6 @@
         justify-content: center;
         font-size: 12px;
         margin: 0 auto;
-        justify-items: space-between;
     }
 
     .circle1 {
@@ -260,7 +260,7 @@
         align-items: center;
         height: 1px;
         width: 83px;
-        background-color: #f30606;
+        background-color: #ffffff;
     }
     
     .circle2 {
@@ -342,16 +342,84 @@
         text-align: center;
     }
 
-
-/* 
     .pricing-section {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .pricing {
+    .pricing-title {   
         font-size: 26px;
     }
 
     .pricing-subtext {
         font-size: 16px;
+    }
+    /* PRICING=DONE */
+    
+    .pricing-box {
+        display: flex;
+        width: 964px;
+        height: 452px;
+        justify-content: space-around;
+        border: 1px #E2E2E2;
+        box-shadow: 1px 10px 10px 10px #00000026;
+    }
+
+    .pricing-box {
+        width: 370px;
+        height: 452px;
+    }
+
+    /* .month {
+        display: inline-flex;
+        flex-direction: column;
+        height: 33px;
+        padding-top: 40px;
     } */
+
+    .feature-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        width: 400px;
+    }
+
+    .button-play {
+        display: flex;
+        align-items: end;
+        justify-items: center;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2476FF;
+        color: white;
+        height: 48px;
+        width: 137px;
+        border-radius: 30px;
+        border-color: #2476FF;
+        gap: 5px;
+    }
+
+    .fa-play {
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        color: #2476FF;
+        border-radius: 50%;
+    }
+
+    .fa {
+        display: flex;
+        background-color: white;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+
+  
