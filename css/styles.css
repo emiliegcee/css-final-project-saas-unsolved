@@ -358,6 +358,13 @@
         font-size: 16px;
     }
     /* PRICING=DONE */
+    
+    .pricing-table {
+        display: flex;
+        flex-direction: row;
+        width: 964px;
+        height:452px;
+    }
 
     .plan-type{
         display:flex;
@@ -368,7 +375,7 @@
         display: flex;
         flex-direction: column;
         border: 1px #E2E2E2;
-        box-shadow: 1px 10px 10px 10px #00000026;
+        box-shadow: 3px 3px 3px 3px #00000026;
         width: 370px;
         height: 452px;
         margin: 20px;
@@ -443,10 +450,57 @@
     }
   /* Pricing Box = DONE-ish */
 
-    .pricing-table {
-        display: table;
+    .plan-features {
+        display: flex;
         flex-direction: column;
-        border: 1px #E2E2E2;
-        width: 564px;
+        width: 585px;
         height: 452px;
+    }
+
+    .row-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px #FFFFFF;
+        width: 277px;
+    }
+
+    .pf-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 237px;
+        height: 179px;
+        padding: 20px;
+    }
+
+    .pf-item img {
+        width: 49.58px;
+        height: 49.57px;
+    }
+
+    .pf-title {
+        display: flex;
+        font-size: 18px;
+        color: black;
+        text-align: left;
+        width: 224px;
+        margin: 0;
+    }
+
+    .pf-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: #677788;
+        width: 237px;
+        height: 66px;
+        text-align: left;
+        margin: 0;
+    }
+    .row-two {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px #FFFFFF;
     }
