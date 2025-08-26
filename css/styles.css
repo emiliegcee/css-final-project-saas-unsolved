@@ -30,7 +30,7 @@
         justify-self: end;
         color: #010a17;
         list-style: none;
-        gap: 25px;
+        gap: 23px;
         width: 311px;
         height: 17px;
        }
@@ -91,7 +91,7 @@
         font-size: 12px;
     }
 
-       button{
+       button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -104,12 +104,18 @@
         gap: 5px;
     }
 
+    
     .fa-play {
         display:flex;
         align-content: center;
         justify-content: center;
         color: #2476FF;
         border-radius: 50%;
+        margin-left: 1px;
+    }
+
+    .fa-play:before {
+        margin-left:3px;
     }
 
     .fa {
@@ -364,6 +370,8 @@
         flex-direction: row;
         width: 964px;
         height:452px;
+        margin: 20px;
+        gap: 10px;
     }
 
     .plan-type{
@@ -376,16 +384,16 @@
         flex-direction: column;
         border: 1px #E2E2E2;
         box-shadow: 3px 3px 3px 3px #00000026;
+        box-sizing: border-box;
         width: 370px;
         height: 452px;
-        margin: 20px;
+        padding: 40px;
     }
 
     .big-price {
         display: inline-flex;
         align-items: baseline;
         color: #010a17;
-        margin-left: 40px;
     }
 
     .big-price h3 {
@@ -400,7 +408,7 @@
 
     hr {
         color: #8D8D8D;
-        width: 290px;
+        width: 100%;
     }
 
     .content {
@@ -410,12 +418,8 @@
         line-height: 24px;
         font-size: 16px;
         color:#677788;
-        padding: 35px;
+        /* padding: 35px; */
     }
-    .button-play {
-        margin-left: 25px;
-    }
-
     .button{
         display: flex;
         background-color: #2476FF;
@@ -446,7 +450,6 @@
         font-size: 12px;
         color: #8D8D8D;
         margin-top: 15px;
-        gap: 10px;
     }
   /* Pricing Box = DONE-ish */
 
@@ -454,8 +457,7 @@
         display: flex;
         flex-direction: column;
         width: 585px;
-        height: 452px;
-    }
+        height: 452px;    }
 
     .row-one {
         display: flex;
@@ -481,11 +483,22 @@
 
     .pf-title {
         display: flex;
+        align-items: center;
         font-size: 18px;
         color: black;
         text-align: left;
         width: 224px;
         margin: 0;
+        font-weight: 700;
+    }
+
+    .sketch {
+        background-color: #01C9A7;
+        width: 60px;
+        height: 23px;
+        border: none;
+        margin: 4px 10px 4px 10px;
+        padding: 10px;
     }
 
     .pf-content {
@@ -501,6 +514,5 @@
     .row-two {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         border: 1px #FFFFFF;
     }
