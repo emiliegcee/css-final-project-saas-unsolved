@@ -516,3 +516,37 @@
         flex-direction: row;
         border: 1px #FFFFFF;
     }
+
+    /* Plan Features = DONE */
+
+
+    .hire-us {
+        display: flex;
+        flex-direction: column;
+        min-width: 1024px;
+        height: 708px;
+        margin: 0 auto;
+        background-color: #20335B;
+    }
+
+    .left-side {
+        padding: 70px;
+    }
+
+    .hireustitle {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 26px;
+        font-weight: 700px;
+        width: 370px;
+    }
+
+ 
+    .hireusphrase {
+        color: #677788;
+        font-size: 16px;
+        font-weight: 400;
+        width: 92px;
+        height: 31px;
+    }
