@@ -382,12 +382,14 @@
     .pricing-box {
         display: flex;
         flex-direction: column;
-        border: 1px #E2E2E2;
-        box-shadow: 3px 3px 3px 3px #00000026;
-        box-sizing: border-box;
-        width: 370px;
+        border: 1px #FFFFFF solid;
+        width: 380px;
         height: 452px;
-        padding: 40px;
+    }
+
+    .pricing-box:hover {        
+        box-shadow: 1px 3px 1px 3px #4f484826;
+        width: 390px;
     }
 
     .big-price {
@@ -418,7 +420,6 @@
         line-height: 24px;
         font-size: 16px;
         color:#677788;
-        /* padding: 35px; */
     }
     .button{
         display: flex;
@@ -457,7 +458,9 @@
         display: flex;
         flex-direction: column;
         width: 585px;
-        height: 452px;    }
+        height: 452px;    
+        gap: 5px;
+    }
 
     .row-one {
         display: flex;
@@ -522,31 +525,108 @@
 
     .hire-us {
         display: flex;
-        flex-direction: column;
-        min-width: 1024px;
+        flex-direction: row;
+        width: 1024px;
         height: 708px;
-        margin: 0 auto;
         background-color: #20335B;
-    }
+    }    
 
     .left-side {
-        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 482px;
+        height: 682px;
+        gap: 60px;
+        padding: 60px 0 0 60px;
+    }
+    
+    .top {
+        padding-top: 60px;
+        padding-left: 60px;
+        width: 350px;
+        gap: 60px
     }
 
     .hireustitle {
-        display: flex;
-        flex-direction: column;
-        color: white;
         font-size: 26px;
-        font-weight: 700px;
-        width: 370px;
+        color: white;
     }
 
- 
-    .hireusphrase {
-        color: #677788;
+    .whatever {
         font-size: 16px;
-        font-weight: 400;
-        width: 92px;
-        height: 31px;
+        color: #677788;
+    }
+
+    hr {
+        color:#677788;
+        align-content: start;
+        width: 350px;
+        height: 1px;
+        margin-bottom: 20px;
+    }
+
+    .phrase {
+        color: #FFFFFF        
+    }
+
+    .bottom {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 350px;
+        height: 123px;
+        margin: 60px 0 0 60px;
+    }
+
+    .person {
+       color: white;
+       font-size: 18px;
+    }
+
+    .hoc {
+        color: #677788;
+        font-size: 14px;
+    }
+
+    .img {
+        border-radius: 50px;
+    }
+
+    /* Left side= DONE-ish */
+
+    .right-side {
+        background-color: white;
+        width: 482px;
+        height: 650px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    .form-data {
+        width: 420px;
+        padding: 20px;
+    }
+
+    .form {
+        display: flex;
+        gap: 15px;
+        width: 392px;
+        height: 44px;
+        gap: 20px;
+        
+    }
+
+    .fname .lname {
+        width: 220px;
+        height: 4px;
+        color: #E6E8F2;
+    }
+
+    input .email {
+        width: 392px;
+        height: 44px;
+        gap: 20px;
+        color: #E6E8F2;
+        
     }
