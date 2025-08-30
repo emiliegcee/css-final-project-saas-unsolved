@@ -14,6 +14,10 @@
             color:#2476FF;
             transition-delay: 1s;
         }
+       
+    .pricing-box:hover {
+        box-shadow: 0 10px 20px 0px #E2E2E2;
+    }
      
      .top-section {
         margin: 0 auto;
@@ -45,10 +49,6 @@
         width: 311px;
         height: 17px;
        }
-
-        /* .selector:hover {
-transition-delay: 1s; } */
-
 
     .logo {
         display: flex;
@@ -360,8 +360,7 @@ transition-delay: 1s; } */
     }
 
     .page-layouts {
-        display: flex;       
-        flex-wrap: wrap;
+        display: flex;   
         align-items: center;
         gap: 5px;
     }
@@ -407,11 +406,6 @@ transition-delay: 1s; } */
         border: 1px #FFFFFF solid;
         width: 380px;
         height: 452px;
-    }
-
-    .pricing-box:hover {        
-        box-shadow: 1px 3px 1px 3px #4f484826;
-        width: 390px;
     }
 
     .big-price {
@@ -551,6 +545,7 @@ transition-delay: 1s; } */
         width: 1024px;
         height: 708px;
         background-color: #20335B;
+        margin: 0 auto;
     }    
 
     .left-side {
@@ -613,7 +608,7 @@ transition-delay: 1s; } */
     }
 
 
-    img {
+    .man {
         border-radius: 50%;
         gap: 5px;
     }
@@ -640,8 +635,9 @@ transition-delay: 1s; } */
     }
 
     .form-data-header {
+        display: flex;
         font-size: 16px;
-        height: 25px;
+        height: 40px;
         border: none;
     }
 
@@ -650,6 +646,12 @@ transition-delay: 1s; } */
         /* justify-content: space-between; */
         width: 392px;
         height: 44px;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
@@ -717,6 +719,7 @@ transition-delay: 1s; } */
         height: 22px;
     }
 
-    .submit {
-        justify-items: center;
+    .submit-button {
+        margin: 0 auto;
+        width: 125px;
     }
