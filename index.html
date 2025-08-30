@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="./css/responsive.css" />
     <script src="https://use.fontawesome.com/3f1495bd79.js"></script>
+  </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="top-section">
+    <div class="top-section" >
       <div class="logo">
         <img src="assets/logos/logo-front.svg" alt=""/>
             </div>
@@ -29,13 +30,13 @@
     </header>
      <!-- END HEADER -->
      <!--TOP SECTION -->    
-      <div class="hero">
+      <section class="hero">
         <div class="left-side">
           <div class="headline">
           <h2>Empowering teams with the freedom</h2>
           </div>
           <div class="subtext">
-          <p>Own the unlimited power of the web development</p>
+          <p class= "subtext">Own the unlimited power of the web development</p>
           </div>
           <div class="actions">
           <button type="button">
@@ -44,9 +45,8 @@
           <b>Play Video</b></button>
           <div><a href="LearnMore">Learn More</a></div>
         </div>
-      </div>  
+      </div>
         <section class="logo-icons">
-          <div class="logo-icons">
             <div class="asana"></div>
             <div class="atlassian"></div>
             <div class="calendar"></div>
@@ -55,13 +55,12 @@
             <div class="logo-front"></div>
             <div class="paypal"></div>
             <div class="weave"></div>
-          </div>
           </section>
-        </div>
-        <div class="headline-why">
+      </section>
+        <div class="headline-why" id="learn">
           <h2>Why Front?</h2>
-          <p>Front is an incredibly beautiful, fully responsive,
-               and mobile-first projects on the web - it is the starting point for creative sites</p></div>
+          <p class="why-text">Front is an incredibly beautiful, fully responsive,
+               and mobile-first projects on the web - it is the starting point for creative sites.</p></div>
           <div class="bullets">
             <div class="bullet"> 
                 <div class="basic-elements">
@@ -71,7 +70,7 @@
                 </div>
                   <div class="inner-wing"></div>
               </div>
-              <p>Basic Elements</p>
+              <p class="basic-elements">Basic Elements</p>
               </div>
             <div class="bullet">
                 <div class="components">
@@ -81,7 +80,7 @@
                 </div>
                   <div class="inner-wing"></div>
                 </div>
-                <p>Components</p>
+                <p class="components">Components</p>
                 </div>
               <div class="bullet">
                  <div class="combined-components">
@@ -91,7 +90,7 @@
                   </div>
                   <div class="inner-wing"></div>
                 </div>
-                <p>Combined Components</p>
+                <p class="combined-components">Combined Components</p>
                 </div>
               <div class="bullet">
                   <div class="page-layouts">
@@ -101,10 +100,10 @@
                   </div>
                         <div class="outer-wing"></div>
                   </div>
-                  <p>Page Layouts</p>
+                  <p class="page-layouts">Page Layouts</p>
               </div>
           </div>
-          <div class="pricing-section">
+          <div class="pricing-section" id="pricing">
                 <div class="pricing-title">
                     <div><b>Pricing</b></div>
                 </div>
@@ -123,7 +122,7 @@
             </div>
             <span class="info">No credit card required.</span>
             </div>
-              <div class="plan-features">
+              <div class="plan-features" id="features">
                   <div class="row-one">
                     <div class="pf-item">
                       <img src="assets/images/components.svg" alt="">
@@ -146,7 +145,7 @@
                 </div>
             </div>
           </div>
-          <div class="hire-us">
+          <div class="hire-us" id="hireus">
               <div class="left-side">
                   <div class="top">
                     <div class="hireustitle">Hire us</div>
@@ -160,25 +159,48 @@
                             <img src="assets/images/man_one.jpg" alt=""></div>
               </div>
               <div class="right-side">
-                    <div class="form-data">
-                     <p style="font-size:16px"><b>Fill out the form and we'll be in touch as soon as possible</b></div>
+                  <form class="form-data">
+                     <p class="form-data-header"><b>Fill out the form and we'll be in touch as soon as possible.</b></p>
                       <div class="form">
-                        <label for="fname"></label>
                         <input type="text" id="fname" name="name" placeholder="First Name">
-                        <label for="lname"></label>
                         <input type="text" id="lname" name="name" placeholder="Last Name"></div>
-                        <label for="email"></label>
                         <input type="email" id="email" name="email" placeholder="Email">
-                  </div>
+                  
                   <div class="dropdown">
-                    <label for="budget"></label>
+                    <!-- <label for="budget"></label> -->
                     <select id="budget" name="budget">
-                      <option value="general">General Inquiry</option>
-                      <option value="support">Support</option>
-                      <option value="sales">Sales</option>
-                      <option value="other">Other</option>
+                      <option label="Budget" hidden selected>Budget</option>
+                      <option label="-500">-500</option>
+                      <option label="500-1000">500-1000</option>
+                      <option label="1001-5000">1001-5000</option>
+                      <option label="5000+">5000+</option>
                     </select>
-                  </div></div>
+                    <div class="dropdown">
+                    <!-- <label for="country"></label> -->
+                    <select id="country" name="country">
+                      <option label="Country" hidden selected>Country</option>
+                      <option label="Mexico">Mexico</option>
+                      <option label="USA">USA</option>
+                      <option label="Canada">Canada</option>
+                      <option label="UK">UK</option>
+                    </select>
+                    </div>
+                  </div>
+                  <p class="tell-us">Tell us more about your project, needs, and timeline
+                                          please...</p>
+                  <div class="permission">
+                    <input type="checkbox" id="checkbox" name="option1" value="yes">
+                    <p class="yes">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</p></div>
+                    <div class="privacy-links">
+                      <p class="privacy-link1">
+                        <a href="privacy-policy">View privacy policy</a></p>
+                      <p class ="privacy-link2">
+                        <a href="privacy-policy">View privacy policy</a></p></div>
+                    <button class="submit">Submit Form</button>
+
+                  </form>
+            </div>
+          </div>
 </body>
 </html> 
 

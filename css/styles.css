@@ -1,8 +1,19 @@
 
      * {
         font-family:Arial, Helvetica, sans-serif;
-     }
-     
+        text-decoration: none;
+        }
+
+        a:link {
+            color: #677788;
+        }
+        a:visited {
+            color: #677788;
+        }
+        a:hover {
+            color:#2476FF;
+            transition-delay: 1s;
+        }
      
      .top-section {
         margin: 0 auto;
@@ -13,7 +24,7 @@
         background-color: #F6F8FA;
         height: 86px;
         max-width: 1024px;   
-        font-size: 14px; 
+        font-size: 14px;
      }
 
     .top-nav {
@@ -34,6 +45,10 @@
         width: 311px;
         height: 17px;
        }
+
+        /* .selector:hover {
+transition-delay: 1s; } */
+
 
     .logo {
         display: flex;
@@ -80,7 +95,7 @@
     .subtext {
         font-size: 12px;
         color: #010a17;
-        width: 46%;
+        height: 20px;
     }
 
     .actions {
@@ -91,16 +106,16 @@
         font-size: 12px;
     }
 
-       button {
+    button {
         display: flex;
-        justify-content: center;
         align-items: center;
-        background-color: #2476FF;
+        justify-content: center;
         color: white;
-        height: 48px;
+        background-color: #2476FF;
         width: 137px;
-        border-radius: 30px;
+        height: 48px;
         border-color: #2476FF;
+        border-radius: 30px;
         gap: 5px;
     }
 
@@ -241,12 +256,19 @@
         align-items: center;
     }
 
+    .why-text {
+        font-size: 16px;
+        width: 600px;
+        height: 35px;
+    }
+
     .bullets {
         display: flex;
         width: 964px;
         justify-content: center;
         font-size: 12px;
         margin: 0 auto;
+        height: 50px;
     }
 
     .circle1 {
@@ -353,7 +375,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px 30px 0px;
+        margin: 100px 0px 50px 0px;
     }
 
     .pricing-title {   
@@ -539,6 +561,7 @@
         height: 682px;
         gap: 60px;
         padding: 60px 0 0 60px;
+        margin: 0;
     }
     
     .top {
@@ -556,14 +579,13 @@
     .whatever {
         font-size: 16px;
         color: #677788;
+        height: 20px;
     }
 
     hr {
         color:#677788;
         align-content: start;
         width: 350px;
-        height: 1px;
-        margin-bottom: 20px;
     }
 
     .phrase {
@@ -579,17 +601,21 @@
     }
 
     .person {
+       width: 144px;
        color: white;
        font-size: 18px;
     }
 
     .hoc {
+        width: 188px;
         color: #677788;
         font-size: 14px;
     }
 
-    .img {
-        border-radius: 50px;
+
+    img {
+        border-radius: 50%;
+        gap: 5px;
     }
 
     /* Left side= DONE-ish */
@@ -597,41 +623,100 @@
     .right-side {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        align-content: center;
         background-color: white;
         width: 482px;
         height: 650px;
         border-radius: 10px;
         margin: 20px;
-        gap: 10px;
-            }
+        border: 1px solid #E6E8F2;
+     }
 
     .form-data {
+        display: flex;
+        flex-direction: column;
         width: 420px;
         padding: 20px;
     }
 
+    .form-data-header {
+        font-size: 16px;
+        height: 25px;
+        border: none;
+    }
+
     .form {
         display: flex;
-        gap: 15px;
+        /* justify-content: space-between; */
         width: 392px;
         height: 44px;
         gap: 20px;
-        
     }
 
-    .fname .lname {
-        width: 220px;
-        height: 4px;
-        color: #E6E8F2;
+    #fname, #lname {
+        width: 176px;
+        height: 44px;
+        border: 1px solid #E6E8F2;
     }
 
     #email {
         display: flex;
         flex-direction: column;
-        width: 378px;
+        width: 380px;
         height: 44px;
+        border: 1px solid #E6E8F2;
+    }
+
+    .dropdown {
+        display: flex;
+        width: auto;
         gap: 20px;
-        color: #E6E8F2;
-        margin-left: 20px;
+        font-weight: 700px;
+    }
+
+    #budget, #country {
+        width: 184px;
+        height: 44px;
+        border: 1px solid #E6E8F2;
+    }
+
+    .tell-us {
+        border: 1px solid #E6E8F2;
+        width: 392px;
+        height: 150px;
+        color: #828282;
+        font-weight: 510;
+        border-radius: 5px;
+    }
+
+    .permission {
+        display: flex;
+        font-size: 14px;
+        gap: 5px;
+        line-height: 22px;
+        color: #828282;
+    }
+
+    #checkbox {
+        display: flex;
+        width: 35px;
+        margin-bottom: 14px;
+    }
+
+    .privacy-links {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .privacy-link1, .privacy-link2 {
+        width: 140px;
+        border-bottom-style: dashed;
+        gap: 50px;
+        color: black;
+        height: 22px;
+    }
+
+    .submit {
+        justify-items: center;
     }
