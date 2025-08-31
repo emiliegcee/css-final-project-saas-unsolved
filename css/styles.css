@@ -539,7 +539,7 @@
     /* Plan Features = DONE */
 
 
-    .hire-us {
+    .hireus {
         display: flex;
         flex-direction: row;
         width: 1024px;
@@ -553,10 +553,8 @@
         flex-direction: column;
         justify-items: center;
         width: 482px;
-        height: 682px;
         gap: 60px;
         padding: 60px 0 0 60px;
-        margin: 0;
     }
     
     .top {
@@ -581,6 +579,8 @@
         color:#677788;
         align-content: start;
         width: 350px;
+        gap: 10px;
+        margin-bottom: 30px;
     }
 
     .phrase {
@@ -673,7 +673,7 @@
         display: flex;
         width: auto;
         gap: 20px;
-        font-weight: 700px;
+        font-weight: 700;
     }
 
     #budget, #country {
@@ -722,4 +722,60 @@
     .submit-button {
         margin: 0 auto;
         width: 125px;
+    }
+
+    /* HireUs = DONE */
+
+    .footer-frame {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 1024px;
+        height: 166px;
+        margin: 0 auto;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 30px;
+        gap: 30px;
+    }
+
+    .footer-address, .footer-phone {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        width: 251px;
+        font-size: 14px;
+        color: #677788;
+    }
+
+    fa-solid-fa-square-arrow-up-right, fa-solid-fa-phone {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 5px;
+        font-size: 14px;
+        color: #677788;
+    }
+
+
+    .footer-columns {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.company, ul.features, ul.documents, ul.resources {
+        display: flex;
+        flex-direction: column;
+        width: 118px;
+        height: 166px;
     }
