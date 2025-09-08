@@ -1,5 +1,7 @@
 
-        * {
+       @media (min-width:1024px) {
+       
+       * {
         font-family:Arial, Helvetica, sans-serif;
         text-decoration: none;
         list-style: none;
@@ -47,7 +49,6 @@
         background-color: white;
         color: #2476FF;
     }
-    
      
      .top-section {
         margin: 0 auto;
@@ -57,7 +58,7 @@
         justify-content: space-between;
         background-color: #F6F8FA;
         height: 86px;
-        max-width: 1024px;   
+        max-width: 100%;   
         font-size: 14px;
      }
 
@@ -104,15 +105,14 @@
     .trigram {
         display: none;
     }
-    /* Header=DONE! ^^ */
 
     .hero {
         display: flex;
-        width: 1024px;
+        justify-content: center;
+        width: 100%;
         height: 446px;
         background-image: url(../assets/bg/background-top.svg);
-        margin: 0 auto;
-        }
+    }
  
     .headline h2 {
         font-size: 40px;
@@ -170,13 +170,10 @@
         height: 18px;
         border-radius: 50%;
     }
-    /* LEFT SIDE = DONE */
-    
     .logo-icons {
         position: relative;
         width: 482px;
         height: 406px;
-
     }
       
     .asana {
@@ -291,8 +288,6 @@
         box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.15);
     }
 
-/* RIGHT SIDE= DONE */
-
     .headline-why {
         display: flex;
         flex-direction: column;
@@ -301,8 +296,9 @@
     }
 
     .why-text {
+        text-align: center;
         font-size: 16px;
-        width: 600px;
+        width: 100%;
         height: 35px;
     }
 
@@ -428,7 +424,6 @@
     .pricing-subtext {
         font-size: 16px;
     }
-    /* PRICING=DONE */
     
     .pricing-table {
         display: flex;
@@ -455,6 +450,7 @@
 
     .big-price {
         display: inline-flex;
+        justify-content: center;
         align-items: baseline;
         color: #010a17;
     }
@@ -481,6 +477,7 @@
         line-height: 24px;
         font-size: 16px;
         color:#677788;
+        margin-left: 20px;
     }
     .button{
         display: flex;
@@ -490,6 +487,10 @@
         width: 137px;
         border-radius: 30px;
         border-color: #2476FF;
+    }
+
+    .button-play {
+        margin-left: 20px;
     }
 
     .fa-play {
@@ -512,8 +513,8 @@
         font-size: 12px;
         color: #8D8D8D;
         margin-top: 15px;
+        margin-left: 20px;
     }
-  /* Pricing Box = DONE-ish */
 
     .plan-features {
         display: flex;
@@ -581,16 +582,14 @@
         border: 1px #FFFFFF;
     }
 
-    /* Plan Features = DONE */
-
-
     .hireus {
         display: flex;
         flex-direction: row;
-        width: 1024px;
+        justify-content: center;
+        width: 100%;
         height: 708px;
         background-color: #20335B;
-        margin: 0 auto;
+        
     }    
 
     .left-side {
@@ -658,8 +657,6 @@
         gap: 5px;
     }
 
-    /* Left side= DONE-ish */
-
     .right-side {
         display: flex;
         flex-direction: column;
@@ -688,7 +685,6 @@
 
     .form {
         display: flex;
-        /* justify-content: space-between; */
         width: 392px;
         height: 44px;
         gap: 20px;
@@ -769,13 +765,11 @@
         width: 125px;
     }
 
-    /* HireUs = DONE */
-
     .footer-frame {
         display: flex;
-        width: 1024px;
+        width: 100%;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .footer-contact {
@@ -840,3 +834,9 @@
         border-radius: 3px;
         gap: 5px;
     }
+}
+
+@media only screen and (min-device-width: 361px) and (max-device-width: 1023px) {
+
+
+}
