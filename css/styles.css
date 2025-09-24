@@ -4,6 +4,7 @@
         font-family:Arial, Helvetica, sans-serif;
         text-decoration: none;
         list-style: none;
+        /* overflow-x: hidden; */
         }
 
         @media (min-width:1024px) {
@@ -99,7 +100,7 @@
         border-radius: 30px;
         border-color: #2476FF;
         margin: 0 auto;
-        max-width: 1024px;
+        
     }
 
     .trigram {
@@ -300,7 +301,7 @@
 
     .bullets {
         display: flex;
-        width: 964px;
+        width: 65%;
         justify-content: center;
         font-size: 12px;
         margin: 0 auto;
@@ -410,7 +411,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 100px 0px 50px 0px;
+        margin-top: 60px;
+        width: 100%;
     }
 
     .pricing-title {   
@@ -419,6 +421,7 @@
 
     .pricing-subtext {
         font-size: 16px;
+        margin-bottom: 30px;
     }
     
     .pricing-table {
@@ -439,7 +442,6 @@
         flex-direction: column;
         border: 1px #FFFFFF solid;
         width: 380px;
-        height: 452px;
         border: 1px solid #E2E2E2;
     }
 
@@ -575,6 +577,7 @@
         display: flex;
         flex-direction: row;
         border: 1px #FFFFFF;
+        width: 277px;
     }
 
     .hireus {
@@ -600,7 +603,7 @@
         padding-top: 60px;
         padding-left: 60px;
         width: 350px;
-        gap: 60px
+        /* gap: 60px; */
     }
 
     .hireustitle {
@@ -832,10 +835,8 @@
 
 
 @media(min-width: 768px) and (max-width: 1023px) {
+
     
-    .top-section {
-        width: 100%;
-    }
 
     .top-nav ul.menu{
         display: none;
@@ -853,23 +854,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
         height: 750px;
     }
 
     .headline h2 {
-        width: 100%;
         font-size: 28px;
-        margin: 0 auto;
     }
 
     .left-side-top {
         display: flex;
         align-items: center;
         height: 309px;
-        padding: 0px;
         row-gap: 10%;
-        margin: 0;
     }
 
     .logo-icons {
@@ -879,12 +875,6 @@
     .learn .why-text {
         display: flex;
         justify-content: center;
-        max-width: 100%;
-    }
-
-    .bullets {
-        display: flex;
-        max-width: 100%;
     }
 
     .pricing-table {
@@ -894,9 +884,54 @@
         height: 875px;
     }
 
-    .hire-us {
+    .hireus {
         display: flex;
-        max-width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
     }
 
+    .pricing-box {
+        display: flex;
+        align-items: center;
+        width: 680px;
     }
+
+    .plan-features {
+        width: 680px;
+    }
+
+    .row-one {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .row-two {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: flex-start;  
+    }
+    
+    .man {
+        width: 70px;
+        height: 70px;
+    }
+}
