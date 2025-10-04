@@ -4,7 +4,6 @@
         font-family:Arial, Helvetica, sans-serif;
         text-decoration: none;
         list-style: none;
-        /* overflow-x: hidden; */
         }
 
         @media (min-width:1024px) {
@@ -59,7 +58,6 @@
         justify-content: space-between;
         background-color: #F6F8FA;
         height: 86px;
-        max-width: 100%;   
         font-size: 14px;
      }
 
@@ -142,8 +140,8 @@
         justify-content: center;
         color: white;
         background-color: #2476FF;
-        width: 137px;
-        height: 48px;
+        background-size: cover;
+        height: 50px;
         border-color: #2476FF;
         border-radius: 30px;
         gap: 5px;
@@ -584,10 +582,10 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
         height: 708px;
+        height: 725px;
         background-color: #20335B;
-        
+        background-size: 75%;
     }    
 
     .left-side-top {
@@ -658,9 +656,7 @@
     .right-side {
         display: flex;
         flex-direction: column;
-        align-content: center;
         background-color: white;
-        width: 482px;
         height: 650px;
         border-radius: 10px;
         margin: 20px;
@@ -834,11 +830,12 @@
     }
 
 
-@media(min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
+    * {max-width: 100%;}
     
 
-    .top-nav ul.menu{
+    .top-nav{
         display: none;
     }
 
@@ -848,33 +845,102 @@
 
     .trigram {
         display: flex;
+        flex-direction: column;
+        border: black;
     }
 
     .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 750px;
-    }
+        height: 223px;
+        }
 
     .headline h2 {
-        font-size: 28px;
+        font-size: 29px;
+        width: 100rem;
+        gap: 10px;
     }
 
     .left-side-top {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        height: 309px;
-        row-gap: 10%;
+        gap: 10px;
+        padding: 0;
     }
 
-    .logo-icons {
-        height: 712px;
-    }
-
-    .learn .why-text {
+   .logo-icons {
         display: flex;
+        flex-direction: column;
+        width: 100rem;
+        margin-bottom: 118px;
+    }
+
+    .google {
+        display: relative;
+        left: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .attlasian {
+        display: relative;
+        left: 287px;
+        width: 80px;
+        height:80px;
+    }
+
+    .asana {
+        display: relative;
+        left: 533px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .paypal {
+        display: relative;
+        top: 99px;
+        left: 112px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .weave {
+        display: relative;
+        top: 99px;
+        left: 414px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .google-ads {
+        display: relative;
+        top: 209px;
+        left: 210px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .calendar {
+        display: relative;
+        top: 149px;
+        left: 517px;
+        width: 80px;
+        height: 80px;
+    }
+
+    why-front {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .why-text {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        height: 100px;
     }
 
     .pricing-table {
@@ -889,10 +955,18 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: baseline;
+        width: 100rem;
+    }
+
+    .pricing-section {
+        display: Flex;
+        flex-direction: column;
+        height: 1013px;
     }
 
     .pricing-box {
         display: flex;
+        flex-direction:column;
         align-items: center;
         width: 680px;
     }
@@ -927,11 +1001,27 @@
 
     .left-side {
         display: flex;
-        justify-content: flex-start;  
+        justify-content: flex-start;
+        padding: 30px;
     }
-    
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 309px;
+    }
+
     .man {
         width: 70px;
         height: 70px;
     }
+
+    .footer-frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
+@media (min-width: 360px) and (max-width: 767px) {
+
