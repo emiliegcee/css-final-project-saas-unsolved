@@ -25,10 +25,9 @@
             100% {
                 transform: translateX(0%);
                 opacity: 1;
-            }
-            
+            }        
         }
-
+        
         @keyframes slide-up {
             0% {
                 transform: translateY(500%);
@@ -39,7 +38,7 @@
                 opacity: 1;
             }
         }
-        }
+    }
         
     .pricing-box:hover {
         box-shadow: 0 10px 20px 0px #E2E2E2;
@@ -65,7 +64,7 @@
         display: flex;
         justify-content: space-around;
         justify-items: end;
-        width: 471px;
+        width: 500px;
         height: 57px;
         }
 
@@ -116,7 +115,6 @@
     .headline h2 {
         font-size: 40px;
         color: #010a17;
-        width: 46%;
         font-weight: 500;
     } 
     
@@ -146,7 +144,6 @@
         border-radius: 30px;
         gap: 5px;
     }
-
     
     .fa-play {
         display:flex;
@@ -168,6 +165,7 @@
         height: 18px;
         border-radius: 50%;
     }
+
     .logo-icons {
         position: relative;
         width: 482px;
@@ -761,15 +759,12 @@
 
     .footer-frame {
         display: flex;
-        width: 100%;
-        margin: 0 auto;
-        align-items: center;
     }
 
     .footer-contact {
         display: flex;
         flex-direction: column;
-        margin: 40px 0px 0px 30px
+        margin: 20px 0px 0px 30px
     }
 
     .footer-logo {
@@ -784,6 +779,14 @@
     }
 
     .footer-columns {
+        display: flex;
+    }
+
+    .columngroup-one {
+        display: flex;
+    }
+
+    .columngroup-two {
         display: flex;
     }
 
@@ -820,24 +823,10 @@
         width: 150px;
     }
 
-    span.hiring {
-        font-size: 10px;
-        color: white;
-        background-color: #2576FF;
-        border: 1px solid #2576FF;
-        border-radius: 3px;
-        gap: 5px;
-    }
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    * {max-width: 100%;}
-    
 
-    .top-nav{
-        display: none;
-    }
 
     .btn {
         display: none;
@@ -845,87 +834,95 @@
 
     .trigram {
         display: flex;
-        flex-direction: column;
         border: black;
-    }
+        margin-right: 4rem;
+        }
+
+        .top-section {
+            width: 63rem;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .action {
+            display: flex;
+            margin: 20px;
+            justify-content: center;
+        }
 
     .hero {
         display: flex;
         flex-direction: column;
-        align-items: center;
         height: 223px;
+        width: 61rem;
         }
 
-    .headline h2 {
-        font-size: 29px;
-        width: 100rem;
-        gap: 10px;
+    .headline {
+        width: 58rem;
+    }
+
+    .subtext {
+        text-align: center;
     }
 
     .left-side-top {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 0;
+        gap: 0;
     }
 
    .logo-icons {
         display: flex;
         flex-direction: column;
-        width: 100rem;
-        margin-bottom: 118px;
+        width: 58rem;
+        height: 223px;
+        margin-bottom: 100px;
     }
 
     .google {
-        display: relative;
-        left: 50px;
+        left: 100px;
         width: 60px;
         height: 60px;
     }
 
-    .attlasian {
-        display: relative;
-        left: 287px;
+    .atlassian {
+        left: 350px;
         width: 80px;
         height:80px;
     }
 
     .asana {
-        display: relative;
-        left: 533px;
+        left: 600px;
         width: 80px;
         height: 80px;
     }
     
     .paypal {
-        display: relative;
         top: 99px;
-        left: 112px;
+        left: 110px;
         width: 80px;
         height: 80px;
     }
 
     .weave {
-        display: relative;
         top: 99px;
-        left: 414px;
+        left: 472px;
         width: 80px;
         height: 80px;
     }
 
     .google-ads {
-        display: relative;
         top: 209px;
-        left: 210px;
+        left: 240px;
         width: 60px;
         height: 60px;
     }
 
     .calendar {
-        display: relative;
-        top: 149px;
-        left: 517px;
+        top: 190px;
+        left: 583px;
         width: 80px;
         height: 80px;
     }
@@ -943,6 +940,10 @@
         height: 100px;
     }
 
+    .headline-why {
+        margin-top: 260px;
+    }
+
     .pricing-table {
         display: flex;
         flex-direction: column;
@@ -954,8 +955,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: baseline;
-        width: 100rem;
+        align-items: center;
+        width: 48rem;
+        height: 1050px;
+        margin-left: 15%;
     }
 
     .pricing-section {
@@ -1001,6 +1004,7 @@
 
     .left-side {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         padding: 30px;
     }
@@ -1008,8 +1012,8 @@
     .right-side {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 309px;
+        align-content: center;
+        height: 588px;
     }
 
     .man {
@@ -1017,11 +1021,54 @@
         height: 70px;
     }
 
-    .footer-frame {
+    .form-data {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 588px;
+        height: 500px;
+    } 
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-frame {
+        display: flex;
         justify-content: space-around;
+        gap: 30px;
+    }
+
+    .columngroup-one {
+        display: flex;
+        flex-direction: column;
+        width: 166px;
+    }
+
+    .columngroup-two {
+        display: flex;
+        flex-direction: column;
+        width: 166px;
     }
 }
+
 @media (min-width: 360px) and (max-width: 767px) {
 
+    * {max-width: 38;}
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        }
+
+    .menu{
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    } 
+
+        }
